@@ -54,128 +54,82 @@ Here, it’s used to **chunk**, **summarize**, and **combine** text efficiently.
 
 ⚙️ Installation
 🧩 1️⃣ Clone the Repository
-
-```bash
 git clone https://github.com/TawficaBhuiyan/ai-text-summarizer.git
 cd ai-text-summarizer
 
----
-
 ⚙️ 2️⃣ Create and Activate Virtual Environment
-# Windows (PowerShell)
 
-```bash
+Windows (PowerShell):
+
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 
----
 
+Windows (CMD):
 
-# Windows (CMD)
-
-```bash
 python -m venv .venv
 .\.venv\Scripts\activate
 
----
 
+macOS / Linux:
 
-# macOS / Linux
-
-```bash
 python3 -m venv .venv
 source .venv/bin/activate
 
----
-
-
 📦 3️⃣ Install Dependencies
-
-```bash
 pip install -r requirements.txt
 
----
-
-
 🔑 4️⃣ Configure Environment Variables
-# Create a .env file
 
-```bash
+Create .env file:
+
 USE_LOCAL_MODEL=true
 
----
 
+Optional (if using Hugging Face API):
 
-# Optional (if using Hugging Face API)
-
-```bash
 HUGGINGFACEHUB_API_TOKEN=hf_your_token_here
 
----
-
-
 🚀 Usage
-🔹 Summarize Raw Text
 
-```bash
+Summarize Raw Text:
+
 python -m src.main --text "Python is versatile for AI & web development."
 
----
 
+Summarize a Text File:
 
-🔹 Summarize a Text File
-
-```bash
 python -m src.main --file sample.txt
-
----
-
 
 ⚙️ CLI Options
 Option	Description
---text or -t	Raw text input to summarize
---file or -f	Path to a text file to summarize
+--text or -t	Summarize raw text input
+--file or -f	Summarize from a text file path
 🧪 Testing
 
-```bash
+Run all tests using:
+
 python -m pytest -q
 
----
 
-
+✅ All tests passed!
+<br>
 <img width="492" height="61" alt="testpassed" src="https://github.com/user-attachments/assets/e796e1b1-e5d3-4d0e-9046-4e1fdf3500ac" />
-
 
 📸 Screenshots
 
-🧠 Sample text summarization output:
+🧠 Sample Text Summarization Output:
 <img width="1672" height="98" alt="summarizer_output" src="https://github.com/user-attachments/assets/7d286bf5-5528-4cd3-b739-e0b5ffa1b443" />
 
-
 🤝 Contributing
-
-```bash
 # Fork the repo & create a feature branch
 git checkout -b feature/your-feature
 
----
-
-
 # Commit changes
-
-```bash
 git commit -m "Add feature"
 
----
-
-
 # Push & open PR
-
-```bash
 git push origin feature/your-feature
-
----
-
 
 
 💡 Guidelines: Follow PEP 8, add unit tests, and update documentation as needed.
@@ -199,5 +153,6 @@ LLMs Explained
 ⚡ License
 
 MIT License © 2025 Tawfica Bhuiyan
+
 
 

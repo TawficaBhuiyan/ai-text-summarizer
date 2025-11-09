@@ -86,17 +86,19 @@ python -m src.main --text "Python is versatile for AI & web development."
 python -m src.main --file sample.txt
 
 ⚙️ CLI Options
-| Option           | Description         |
-| ---------------- | ------------------- |
-| `--text` or `-t` | Raw text input      |
-| `--file` or `-f` | Summarize text file |
+| Option           | Description                     |
+| ---------------- | ------------------------------- |
+| `--text` or `-t` | Summarize raw text input        |
+| `--file` or `-f` | Summarize from a text file path |
+
 
 
 🧪 Testing
 python -m pytest -q
 
 📸 Screenshots
-<p align="center"> <img src="docs/screenshots/summarizer_output.png" width="600" alt="Summarizer Output"/> <br><i>Summarized output in terminal</i> </p> <p align="center"> <img src="docs/screenshots/testpassed.png" width="600" alt="Tests Passed"/> <br><i>All unit tests completed successfully</i> </p>
+🧠 Raw Text Summarization
+<p align="center"> <img src="docs/screenshots/summarizer_output.png" alt="Summarizer Output" width="600"/> <br> <i>Example: Summarized output from terminal</i> </p> <p align="center"> <img src="docs/screenshots/testpassed.png" alt="Tests Passed" width="600"/> <br> <i>Example: All tests passed successfully</i> </p>
 
 🤝 Contributing
 # Fork the repo & create branch
@@ -111,11 +113,11 @@ Guidelines: Follow PEP 8, add tests, update docs if needed.
 
 📌 Notes
 
-⚙️ First run downloads model (~1.6 GB)
+⏬ First run downloads the model (~1.6 GB)
 
-💻 Works on CPU; GPU optional
+💻 Works perfectly on CPU; GPU optional
 
-🔒 Offline = zero API cost
+🔒 Local summarization is fully offline (no billing or API calls)
 
 📚 References
 
@@ -128,3 +130,4 @@ LLMs Explained
 ⚡ License
 
 MIT License © 2025 Tawfica Bhuiyan
+

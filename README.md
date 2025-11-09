@@ -1,144 +1,123 @@
-# 🧠 AI Text Summarizer 📝🤖
+🧠 AI Text Summarizer 📝
 
-A **Python-based text summarizer** powered by **Large Language Models (LLMs)** and **LangChain**, capable of summarizing short or long text efficiently — locally or via API.
+A Python-based AI text summarizer powered by LangChain and Large Language Models (LLMs) — built to efficiently summarize both short and long text.
 
-This project demonstrates how to build an AI summarizer **locally** using Hugging Face models, with optional **cloud API support**, structured by **LangChain** for modular workflows.
+This project demonstrates how to build an offline or cloud-connected summarizer using Hugging Face and LangChain, making it a great starting point for LLM-based applications.
 
----
+🌟 Features
 
-## 🌟 **Features**
+✨ Summarizes text into concise bullet points
 
-✅ Summarizes text into **concise bullet points**  
-✅ Handles **short and long documents** with automatic chunking  
-✅ Works **fully offline** with a local Hugging Face model (`facebook/bart-large-cnn`)  
-✅ Supports **cloud API integration** via Hugging Face if a token is provided  
-✅ **CLI-friendly** — summarize raw text or files from the terminal  
-✅ Includes **unit tests** to ensure summarizer reliability  
+🧩 Supports short & long documents via automatic chunking
 
----
+⚙️ Works fully offline using facebook/bart-large-cnn
 
-## 💡 **What Are LLMs and LangChain?**
+☁️ Optional cloud API (Hugging Face Hub integration)
 
-**Large Language Models (LLMs)** are AI models trained to understand and generate human-like text.  
-Examples: GPT-4, BART, T5.  
-They can **summarize**, **answer questions**, **translate**, or **generate creative content**.
+💻 CLI-friendly — summarize raw text or text files directly
 
-**LangChain** is a framework that helps developers structure LLM applications with:
-- Prompt templates  
-- Memory management  
-- Chaining and parsing utilities  
+✅ Includes unit tests for summarizer verification
 
-👉 In this project, LangChain structures the summarization workflow for **chunking**, **summarization**, and **aggregation** — all optimized for both **speed** and **accuracy**.
+💡 What Are LLMs & LangChain?
 
----
+Large Language Models (LLMs) — AI models like GPT-4, BART, and T5 trained to understand and generate human-like text.
+They can summarize, answer questions, translate, or generate coherent text.
 
-## 📁 **Project Structure**
+LangChain — a Python library that helps structure LLM workflows through chains, prompt templates, and memory.
+Here, it’s used to chunk, summarize, and combine text efficiently.
 
+📁 Project Structure
 ai-text-summarizer/
 ├── src/
-│ ├── main.py # CLI entrypoint
-│ ├── summarizer.py # Summarization logic
-│ └── utils.py # Text chunking utility
+│   ├── main.py              # CLI entrypoint
+│   ├── summarizer.py        # Summarization logic
+│   └── utils.py             # Text chunking utility
+│
 ├── tests/
-│ └── test_summarizer.py
+│   └── test_summarizer.py   # Unit tests
+│
 ├── docs/
-│ └── screenshots/ # Screenshots for README
-├── .env.example # Environment variables template
-├── requirements.txt
+│   └── screenshots/         # Screenshots for README
+│
+├── .env.example             # Environment template
+├── requirements.txt         # Dependencies
 ├── .gitignore
 └── README.md
 
-
-
----
-
-## ⚙️ **Installation**
-
-### 🔹 Clone the repository
-```bash
+⚙️ Installation
+🧩 Clone the repository
 git clone https://github.com/TawficaBhuiyan/ai-text-summarizer.git
 cd ai-text-summarizer
 
-🔹 Create and activate a virtual environment
+🧱 Create & activate a virtual environment
 
-Windows PowerShell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-Windows CMD
+PowerShell
 
 python -m venv .venv
-.\.venv\Scripts\activate
+.venv\Scripts\Activate.ps1
 
-🔹 Install dependencies
+
+CMD
+
+python -m venv .venv
+.venv\Scripts\activate
+
+📦 Install dependencies
 pip install -r requirements.txt
 
-Configure environment variables
-Create a .env file:
+🔐 Configure environment variables
+
+Create a .env file in the project root:
+
 USE_LOCAL_MODEL=true
 
 
-Optional — to use Hugging Face API:
+Optional (for Hugging Face cloud API):
+
 HUGGINGFACEHUB_API_TOKEN=hf_your_token_here
 
 🚀 Usage
-1️⃣ Summarize Raw Text
+📝 1️⃣ Summarize raw text
 python -m src.main --text "Python is a versatile language used for AI and web development."
 
-Example Output:
-
-Python is widely used for AI and web development due to its flexibility.
-
-2️⃣ Summarize Text File
-
-Create a file named sample.txt, then run:
+📄 2️⃣ Summarize text file
 python -m src.main --file sample.txt
 
-Example Output:
-
-The text file has been summarized into key bullet points.
-
-3️⃣ CLI Options
+⚙️ 3️⃣ CLI Options
 Option	Description
---text / -t	Summarize raw text directly
---file / -f	Summarize content from a text file
-
-
+--text or -t	Raw text input to summarize
+--file or -f	Path to a text file to summarize
 🧪 Testing
 
-Run all tests with:
+Run tests using pytest:
+
 python -m pytest -q
-✔️ Validates summarization for short and long texts
-✔️ Automatically tests local model performance
+
+
+Verifies that summarization works for short and long inputs using the local model.
 
 📸 Screenshots
+🧠 Raw Text Summarization
+<p align="center"> <img src="docs/screenshots/summarizer_output.png" alt="Summarizer Output" width="600"/> <br> <i>Example: Summarized output from terminal</i> </p>
 
-📄 File Summarization:
-![Summarizer Output](docs/screenshots/summarizer_output.png)
-
+(Add more screenshots to docs/screenshots/ and update here as needed.)
 
 📌 Notes
 
-First run downloads the model (~1.6 GB).
+⏬ The first run downloads the model (~1.6 GB)
 
-Works fully offline (no API or billing required).
+💻 Works perfectly on CPU; GPU optional
 
-Compatible with CPU and GPU systems.
+🔒 Local summarization is fully offline (no billing or API calls)
 
-📖 References
+📚 References
 
 LangChain Documentation
 
 Hugging Face Transformers
 
-Large Language Models Explained
+LLMs Explained
 
 ⚡ License
 
-Released under the MIT License.
-
-✨ Crafted with ❤️ using Python, LangChain, and Hugging Face.
-
----
-
-Would you like me to make a **GitHub-styled version** (with badges for Python, LangChain, and License) at the top too?  
-It’ll make your project README look like a polished open-source repository.
+MIT License © 2025 Tawfica Bhuiyan

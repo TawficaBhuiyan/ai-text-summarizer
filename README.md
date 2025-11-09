@@ -114,12 +114,12 @@ python -m pytest -q
 
 ✅ All tests passed!
 <br>
-<img width="492" height="61" alt="testpassed" src="https://github.com/user-attachments/assets/e796e1b1-e5d3-4d0e-9046-4e1fdf3500ac" />
+<img src="docs/screenshots/testpassed.png" alt="Tests Passed" width="500"/>
 
 📸 Screenshots
 
 🧠 Sample Text Summarization Output:
-<img width="1672" height="98" alt="summarizer_output" src="https://github.com/user-attachments/assets/7d286bf5-5528-4cd3-b739-e0b5ffa1b443" />
+<img src="docs/screenshots/summarizer_output.png" alt="Summarizer Output" width="900"/>
 
 🤝 Contributing
 # Fork the repo & create a feature branch

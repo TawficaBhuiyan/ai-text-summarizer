@@ -53,17 +53,23 @@ Here, it’s used to **chunk**, **summarize**, and **combine** text efficiently.
 └── 📘 README.md
 
 
+---
+
 ## ⚙️ Installation
 
 # 🧩 1️⃣ Clone the Repository
+```bash
 git clone https://github.com/TawficaBhuiyan/ai-text-summarizer.git
 cd ai-text-summarizer
+---
+---
 
 # ⚙️ 2️⃣ Create and Activate Virtual Environment
-
+```bash
 # Windows (PowerShell)
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
+---
 
 # Windows (CMD)
 python -m venv .venv
@@ -130,3 +136,4 @@ git push origin feature/your-feature
 
 ## ⚡ License
 MIT License © 2025 Tawfica Bhuiyan
+

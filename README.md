@@ -59,6 +59,8 @@ Here, it’s used to **chunk**, **summarize**, and **combine** text efficiently.
 git clone https://github.com/TawficaBhuiyan/ai-text-summarizer.git
 cd ai-text-summarizer
 
+---
+
 ⚙️ 2️⃣ Create and Activate Virtual Environment
 # Windows (PowerShell)
 
@@ -66,11 +68,17 @@ cd ai-text-summarizer
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 
+---
+
+
 # Windows (CMD)
 
 ```bash
 python -m venv .venv
 .\.venv\Scripts\activate
+
+---
+
 
 # macOS / Linux
 
@@ -78,10 +86,16 @@ python -m venv .venv
 python3 -m venv .venv
 source .venv/bin/activate
 
+---
+
+
 📦 3️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
+
+---
+
 
 🔑 4️⃣ Configure Environment Variables
 # Create a .env file
@@ -89,10 +103,16 @@ pip install -r requirements.txt
 ```bash
 USE_LOCAL_MODEL=true
 
+---
+
+
 # Optional (if using Hugging Face API)
 
 ```bash
 HUGGINGFACEHUB_API_TOKEN=hf_your_token_here
+
+---
+
 
 🚀 Usage
 🔹 Summarize Raw Text
@@ -100,10 +120,16 @@ HUGGINGFACEHUB_API_TOKEN=hf_your_token_here
 ```bash
 python -m src.main --text "Python is versatile for AI & web development."
 
+---
+
+
 🔹 Summarize a Text File
 
 ```bash
 python -m src.main --file sample.txt
+
+---
+
 
 ⚙️ CLI Options
 Option	Description
@@ -113,6 +139,9 @@ Option	Description
 
 ```bash
 python -m pytest -q
+
+---
+
 
 <img width="492" height="61" alt="testpassed" src="https://github.com/user-attachments/assets/e796e1b1-e5d3-4d0e-9046-4e1fdf3500ac" />
 
@@ -129,15 +158,24 @@ python -m pytest -q
 # Fork the repo & create a feature branch
 git checkout -b feature/your-feature
 
+---
+
+
 # Commit changes
 
 ```bash
 git commit -m "Add feature"
 
+---
+
+
 # Push & open PR
 
 ```bash
 git push origin feature/your-feature
+
+---
+
 
 
 💡 Guidelines: Follow PEP 8, add unit tests, and update documentation as needed.
@@ -161,4 +199,5 @@ LLMs Explained
 ⚡ License
 
 MIT License © 2025 Tawfica Bhuiyan
+
 

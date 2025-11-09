@@ -53,30 +53,42 @@ Here, it’s used to **chunk**, **summarize**, and **combine** text efficiently.
 └── 📘 README.md
 
 ⚙️ Installation
-1️⃣ Clone the Repository
+🧩 1️⃣ Clone the Repository
+
 git clone https://github.com/TawficaBhuiyan/ai-text-summarizer.git
 cd ai-text-summarizer
 
-2️⃣ Create & Activate a Virtual Environment
 
-PowerShell
+⚙️ 2️⃣ Create and Activate Virtual Environment
 
-python -m venv .venv
-.venv\Scripts\Activate.ps1
-
-
-CMD
+Windows (PowerShell):
 
 python -m venv .venv
-.venv\Scripts\activate
+.\.venv\Scripts\Activate.ps1
 
-3️⃣ Install Dependencies
+
+Windows (CMD):
+
+python -m venv .venv
+.\.venv\Scripts\activate
+
+macOS / Linux:
+python3 -m venv .venv
+source .venv/bin/activate
+
+📦 3️⃣ Install Dependencies
 pip install -r requirements.txt
 
-🔐 Environment Variables
+
+
+🔑 4️⃣ Configure Environment Variables
+
+Create a .env file:
 USE_LOCAL_MODEL=true
-# Optional Hugging Face API:
+
+Optional (if using Hugging Face API):
 HUGGINGFACEHUB_API_TOKEN=hf_your_token_here
+
 
 🚀 Usage
 # Summarize raw text
@@ -86,19 +98,24 @@ python -m src.main --text "Python is versatile for AI & web development."
 python -m src.main --file sample.txt
 
 ⚙️ CLI Options
-| Option           | Description                     |
-| ---------------- | ------------------------------- |
-| `--text` or `-t` | Summarize raw text input        |
-| `--file` or `-f` | Summarize from a text file path |
+<p align="center">
+| Option           | Description                      |
+| ---------------- | -------------------------------- |
+| `--text` or `-t` | Raw text input to summarize      |
+| `--file` or `-f` | Path to a text file to summarize |
+
 
 
 
 🧪 Testing
 python -m pytest -q
+<img width="492" height="61" alt="Screenshot 2025-11-09 145742" src="https://github.com/user-attachments/assets/3cd674af-eb8f-4652-8e3b-22a07b38867e" />
+
 
 📸 Screenshots
-🧠 Raw Text Summarization
-<p align="center"> <img src="docs/screenshots/summarizer_output.png" alt="Summarizer Output" width="600"/> <br> <i>Example: Summarized output from terminal</i> </p> <p align="center"> <img src="docs/screenshots/testpassed.png" alt="Tests Passed" width="600"/> <br> <i>Example: All tests passed successfully</i> </p>
+🧠 sample.txt file Summarization
+<img width="1672" height="98" alt="summarizer_output" src="https://github.com/user-attachments/assets/970dd248-186e-4256-832d-59abc5cf285a" />
+
 
 🤝 Contributing
 # Fork the repo & create branch
@@ -130,4 +147,5 @@ LLMs Explained
 ⚡ License
 
 MIT License © 2025 Tawfica Bhuiyan
+
 

@@ -52,13 +52,10 @@ cd ai-text-summarizer
 🧱 Create & activate a virtual environment
 
 PowerShell
-
 python -m venv .venv
 .venv\Scripts\Activate.ps1
 
-
 CMD
-
 python -m venv .venv
 .venv\Scripts\activate
 
@@ -68,12 +65,9 @@ pip install -r requirements.txt
 🔐 Configure environment variables
 
 Create a .env file in the project root:
-
 USE_LOCAL_MODEL=true
 
-
 Optional (for Hugging Face cloud API):
-
 HUGGINGFACEHUB_API_TOKEN=hf_your_token_here
 
 🚀 Usage
@@ -84,23 +78,22 @@ python -m src.main --text "Python is a versatile language used for AI and web de
 python -m src.main --file sample.txt
 
 ⚙️ 3️⃣ CLI Options
-Option	Description
---text or -t	Raw text input to summarize
---file or -f	Path to a text file to summarize
+| Option           | Description                      |
+| ---------------- | -------------------------------- |
+| `--text` or `-t` | Raw text input to summarize      |
+| `--file` or `-f` | Path to a text file to summarize |
+
 🧪 Testing
 
 Run tests using pytest:
-
 python -m pytest -q
-
 
 Verifies that summarization works for short and long inputs using the local model.
 
 📸 Screenshots
 🧠 Raw Text Summarization
 <p align="center"> <img src="docs/screenshots/summarizer_output.png" alt="Summarizer Output" width="600"/> <br> <i>Example: Summarized output from terminal</i> </p>
-
-(Add more screenshots to docs/screenshots/ and update here as needed.)
+<p align="center"> <img src="docs/screenshots/testpassed.png" alt="Summarizer Output" width="600"/> <br> <i>Example: Summarized output from terminal</i> </p>
 
 📌 Notes
 

@@ -52,100 +52,81 @@ Here, it’s used to **chunk**, **summarize**, and **combine** text efficiently.
 ├── 🙈 .gitignore
 └── 📘 README.md
 
-⚙️ Installation
-🧩 1️⃣ Clone the Repository
 
+## ⚙️ Installation
+
+# 🧩 1️⃣ Clone the Repository
 git clone https://github.com/TawficaBhuiyan/ai-text-summarizer.git
 cd ai-text-summarizer
 
+# ⚙️ 2️⃣ Create and Activate Virtual Environment
 
-⚙️ 2️⃣ Create and Activate Virtual Environment
-
-Windows (PowerShell):
-
+# Windows (PowerShell)
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 
-
-Windows (CMD):
-
+# Windows (CMD)
 python -m venv .venv
 .\.venv\Scripts\activate
 
-macOS / Linux:
+# macOS / Linux
 python3 -m venv .venv
 source .venv/bin/activate
 
-📦 3️⃣ Install Dependencies
+# 📦 3️⃣ Install Dependencies
 pip install -r requirements.txt
 
-
-
-🔑 4️⃣ Configure Environment Variables
-
-Create a .env file:
+# 🔑 4️⃣ Configure Environment Variables
+# Create a .env file
 USE_LOCAL_MODEL=true
 
-Optional (if using Hugging Face API):
+# Optional (if using Hugging Face API)
 HUGGINGFACEHUB_API_TOKEN=hf_your_token_here
 
-
-🚀 Usage
+## 🚀 Usage
 # Summarize raw text
 python -m src.main --text "Python is versatile for AI & web development."
 
 # Summarize a text file
 python -m src.main --file sample.txt
 
-⚙️ CLI Options
-<p align="center">
+## ⚙️ CLI Options
 | Option           | Description                      |
 | ---------------- | -------------------------------- |
 | `--text` or `-t` | Raw text input to summarize      |
 | `--file` or `-f` | Path to a text file to summarize |
 
 
-
-
-🧪 Testing
+## 🧪 Testing
 python -m pytest -q
-<img width="492" height="61" alt="Screenshot 2025-11-09 145742" src="https://github.com/user-attachments/assets/3cd674af-eb8f-4652-8e3b-22a07b38867e" />
+![Testing Screenshot](https://github.com/user-attachments/assets/3cd674af-eb8f-4652-8e3b-22a07b38867e)
 
-
-📸 Screenshots
+## 📸 Screenshots
 🧠 sample.txt file Summarization
-<img width="1672" height="98" alt="summarizer_output" src="https://github.com/user-attachments/assets/970dd248-186e-4256-832d-59abc5cf285a" />
 
+![Summarizer Output](https://github.com/user-attachments/assets/970dd248-186e-4256-832d-59abc5cf285a)
 
-🤝 Contributing
+## 🤝 Contributing
 # Fork the repo & create branch
 git checkout -b feature/your-feature
+
 # Commit changes
 git commit -m "Add feature"
+
 # Push & open PR
 git push origin feature/your-feature
 
+> Guidelines: Follow PEP 8, add tests, update docs if needed.
 
-Guidelines: Follow PEP 8, add tests, update docs if needed.
-
-📌 Notes
-
-⏬ First run downloads the model (~1.6 GB)
-
-💻 Works perfectly on CPU; GPU optional
-
+## 📌 Notes
+⏬ First run downloads the model (~1.6 GB)  
+💻 Works perfectly on CPU; GPU optional  
 🔒 Local summarization is fully offline (no billing or API calls)
 
-📚 References
+## 📚 References
+- [LangChain Documentation](https://python.langchain.com/)  
+- [Hugging Face Transformers](https://huggingface.co/docs/transformers)  
+- [LLMs Explained](https://huggingface.co/learn/nlp-course/)
 
-LangChain Documentation
-
-Hugging Face Transformers
-
-LLMs Explained
-
-⚡ License
-
+## ⚡ License
 MIT License © 2025 Tawfica Bhuiyan
-
-
